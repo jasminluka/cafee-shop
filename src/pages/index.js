@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Background from '../components/globals/Background'
 import Info from '../components/home/Info'
 import Menu from '../components/home/Menu'
-// import Products from '../components/home/Products'
+import Products from '../components/home/Products'
 import Contact from '../components/home/Contact'
 
 const IndexPage = ({ data }) => (
@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
     <Background img={data.img.childImageSharp.fluid} title="coffee shop" />
     <Info />
     <Menu items={data.menu} />
-    {/* <Products /> */}
+    <Products />
     <Contact />
   </Layout>
 )
