@@ -26,7 +26,8 @@ export const query = graphql`
     img: file(relativePath: {eq: "default-background.jpeg"}) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+          # ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -42,7 +43,8 @@ export const query = graphql`
         category
         image {
           fixed(height: 50, width: 50) {
-            ...GatsbyContentfulFixed_tracedSVG
+            # ...GatsbyContentfulFixed_tracedSVG
+            ...GatsbyContentfulFixed
           }
         }
       }
